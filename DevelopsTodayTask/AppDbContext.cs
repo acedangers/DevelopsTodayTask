@@ -4,6 +4,7 @@ using System.Data.Entity;
 public class AppDbContext : DbContext
 {
     public AppDbContext() : base("name=ConnectionString") { }
+    public DbSet<CabTripRecord> SampleCabData { get; set; }
 
     // Manually mapping table
     protected override void OnModelCreating(DbModelBuilder modelBuilder)
