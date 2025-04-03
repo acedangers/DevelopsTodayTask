@@ -8,6 +8,7 @@ namespace DevelopsTodayTask.Models
 {
     public class CabTripRecord
     {
+        public int Id { get; set; }
         public DateTime TpepPickupDatetime { get; set; }
         public DateTime TpepDropoffDatetime { get; set; }
         public int PassengerCount { get; set; }
